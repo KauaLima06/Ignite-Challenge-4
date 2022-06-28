@@ -4,6 +4,7 @@ import { CreateUserUseCase } from "./CreateUserUseCase";
 
 const usersRepository = UsersRepository.getInstance();
 const createUserUseCase = new CreateUserUseCase(usersRepository);
+// eslint-disable-next-line prettier/prettier
 const createUserController = new CreateUserController(createUserUseCase);
 
 export { createUserController };
