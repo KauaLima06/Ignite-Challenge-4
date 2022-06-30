@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "SOLID API",
+        "description": "This is an API that use solid concepts",
+        "version": "1.0.0",
+        "contact": {
+            "email": "lima.kaua2006@gmail.com"
+        }
+    },
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": ["Users"],
+                "summary": "Create a user",
+                "description": "Create a new user",
+                "requestBody": {
+                    
+                }
+            }
+        }
+    }
+}

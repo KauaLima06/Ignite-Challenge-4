@@ -7,7 +7,8 @@ class ListAllUsersController {
 
   handle(request: Request, response: Response): Response {
     const { user_id } = request.headers;
-    const users = this.listAllUsersUseCase.execute({ user_id });
+    const id = user_id.toString();
+    const users = this.listAllUsersUseCase.execute({ user_id: id });
     if (users == null) {
       return response.status(400).send();
     }
